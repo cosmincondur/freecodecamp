@@ -151,3 +151,8 @@ article h1 {
         grid-template-columns: 1fr;
     }
 }
+
+#section-title h1 {
+    font-size: 4rem;
+    margin: 2rem;
+}
