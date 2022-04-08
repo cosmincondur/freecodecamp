@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>freeCodeCamp - Survery Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+    <header>
+    <h1 id="title">freeCodeCamp - Survery Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    </header>
+
+    <form id="survey-form">
+        <!-- Name -->
+        <label class="first3-label" id="name-label"><h3>Name</h3></label>
+        <input class="first3" required type="text" id="name" placeholder="Enter your name">
+        <!-- Email -->
+        <label class="first3-label" id="email-label"><h3>Email</h3></label>
+        <input class="first3" required type="email" id="email" placeholder="Enter your email">
+        <!-- Age -->
+        <label class="first3-label" id="number-label"><h3>Age(optional)</h3></label>
+        <input type="number" id="number" min="1" max="99" placeholder="Age" class="first3">
+        <!-- Dropdown -->
+        <h3 id="dropdown-question">What is your favorite feature of freeCodeCamp?</h3>
+        <select name="name" id="dropdown">
+            <option class="none" name="name" value="None...">None...</option>
+            <option name="name" value="Challanges">Challanges</option>
+            <option name="name"value="Projects">Projects</option>
+            <option name="name"value="Community">Community</option>
+            <option name="name"value="Open Source">Open Source</option>
+        </select>
+        <!-- Radio buttons -->
+        <h3 class="recommend-question">Would you recommend freeCodeCamp to a friend?</h3>
+                <label class="input-checkbox" for="Not sure"><input type="radio" name="fav_language" value="definetly">
+                    <p>Yeah sure</p></label>
+                <label class="input-checkbox" for="Not sure"><input type="radio" name="fav_language" value="Not sure">
+                    <p>Not sure</p></label>
+        <!-- Check boxes -->
+        <h3 class="improve-question">What would you like to be improved?</h3>
+        <label class="input-checkbox" for="Backend"><input type="checkbox" class="input-check" name="fav_language" value="Frontend"><p>Front-End</p></label>
+        <label class="input-checkbox" for="Backend"><input type="checkbox" class="input-check" name="fav_language" value="Not sure"><p>Back-End</p></label>
+        <!-- Textarea -->
+        <h3 class="comment-question">Any comments or suggestions ?</h3>
+        <textarea placeholder="Enter your comment here..." id="" cols="30" rows="10"></textarea>
+        <button id="submit" type="submit">Submit</button>
+
+        <p>
+            Background Photo : <a class="author" href="https://unsplash.com/photos/ZdIG2A42RsM?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink">Link to author</a>
+        </p>
+    </form>
+    </main>
+
+    <!-- freeCodeCamp Script -->
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>

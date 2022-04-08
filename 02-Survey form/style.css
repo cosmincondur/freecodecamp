@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 62.5%;
+    color: white;
+}
+
+body {
+    /* Photo */
+    background-image: url(./flowers.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(0.5rem);
+    /* Sizes */
+    font-size: 2rem;
+    height: 100%;
+    width: 100%;
+}
+
+main {
+    /* Alignment */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    /* Alignment */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: auto;
+    padding: 2rem;
+    width: 80%;
+    /* Styling */
+    background-color: rgba(0,0,0,.5);
+    color: #fff;
+    border-radius: 2rem;
+    padding-top: 3rem;
+}
+
+header {
+    padding: 3rem;
+    text-align: center;
+}
+
+/* Name, Email, Age */
+.first3 {
+    width: 100%;
+    padding: 0.5rem;
+    box-sizing: border-box;
+    padding-left: 1rem;
+}
+.first3-label {
+    padding: 1rem 0;
+}
+
+/* Dropdown */
+#dropdown {
+    width: 100%;
+    padding: 0.5rem;
+    color: gray;
+}
+select {
+    color: black;
+}
+
+/* Last 4 questions */
+#dropdown-question, .improve-question, .recommend-question, .comment-question {
+    padding: 1rem 0;
+}
+
+.input-checkbox {
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-checkbox p{
+    margin-left: 1rem;
+}
+.input-check {
+    width: 2rem;
+    height: 2rem;
+}
+
+/* Textarea + Button */
+textarea {
+    width: 100%;
+    margin: 1.5rem 0;
+    padding: 1rem;
+}
+#submit {
+    width: 100%;
+    height: 4rem;
+    margin-bottom: 4rem;
+    background-color: green;
+    border: none;
+    border-radius: 1rem;
+}
+
+.author {
+    color: green;
+}
+
+.credit {
+    width: 100%;
+    text-align: center;
+}
+
+/* COMMENT THE CODE, ON EVERY SECTION, like : Photo/Photo dimension/boxes/colors/btn colors/btn sizes,etc.. */
+

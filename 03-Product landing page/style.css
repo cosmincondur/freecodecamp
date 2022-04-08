@@ -1,0 +1,253 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #eee;
+}
+
+main {
+    width: 70%;
+    margin: auto;
+}
+
+/* Header / logo / navbar*/
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: #eee;
+    z-index: 9999;
+}
+
+.logo {
+    width: 40%;
+    padding-left: 2rem;
+}
+.logo img {
+    width: 40em;
+}
+
+.nav{
+    width: 60%;
+    padding: 1rem;
+}
+#nav-bar {
+    display: flex;
+    width: 100%;
+    font-size: 2rem;
+    align-items: center;
+    justify-content: flex-end;
+    list-style-type: none;
+}
+#nav-bar li a {
+    font-style: none;
+    text-decoration: none;
+    color: orange;
+}
+#nav-bar li a:hover {
+    color: black;
+}
+#nav-bar li {
+    padding: 0 3rem;
+}
+
+/*  Email */
+.form {
+    padding: 2rem 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5vw;
+}
+.form form, .form h3 {
+    width: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.form h3 {
+    width: 100% !important;
+}
+.form form #email {
+    font-size: 2rem;
+}
+.form form input {
+    width: 50%;
+    margin: 1rem auto;
+    padding: 0.5rem;
+    overflow: hidden;
+}
+#submit {
+    width: 40%;
+}
+
+/* Video */
+#howitworks {
+    width: 100%;
+    overflow: hidden;
+    padding-top: 56.25%;
+    position: relative;
+}
+
+iframe {
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border: none;
+}
+
+/* Features */
+.features-container {
+    display: flex;
+}
+.icons {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    font-size: 6rem;
+    align-items: center;
+    justify-content: space-between;
+    color: orange;
+}
+#features {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+/* FOOTER */
+footer {
+    width: 100%;
+    background-color: lightgray;
+    text-align: end;
+    font-size: 2rem;
+    padding: 2rem;
+}
+footer a {
+    margin: 1rem;
+}
+
+/* Pricing */
+#pricing {
+    display: flex;
+    margin: auto;
+    gap: 1rem;
+    margin: 1rem;
+}
+#pricing h1 {
+    background-color: lightgray;
+    text-align: center;
+    padding: 1rem;
+}
+#pricing p {
+    padding: 1rem;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 4rem;
+}
+#pricing p b {
+    font-size: 1.5vw;
+}
+#pricing div {
+    width: 33.3%;
+    border: 1px solid black;
+    margin-bottom: 2rem;
+}
+#pricing button {
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background-color: rgb(245, 177, 51);
+    border: none;
+    border-radius: 1rem;
+    font-weight: 500;
+    font-size: 2rem;
+    display: flex;  
+}
+
+button, #submit {
+    cursor: pointer;
+}
+
+#submit {
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background-color: rgb(245, 177, 51);
+    border: none;
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+#email {
+    padding: 1rem;
+}
+
+@media (max-width: 1080px) { 
+    main {
+        width: 100%;
+    }
+    /* NAV */
+    header {
+        flex-direction: column;
+    }
+    .logo {
+        width: 70%;
+    }
+    #header-img {
+        width: 100%;
+    }
+    #nav-bar {
+        flex-direction: column;
+        font-size: 3rem;
+    }
+    /* FORM */
+    .form h3 {
+        font-size: 4rem;
+    }
+    #submit {
+        width: 100%;
+    }
+    #email {
+        width: 100%;
+    }
+    .form form #email {
+        font-size: 1.5rem;
+    }
+    /* Icons */
+    .icons {
+        display: none;
+    }
+    .features-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    /* Pricing */
+    #pricing {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #pricing div {
+        width: 75%;
+    }
+    #pricing div b {
+        font-size: 3rem;
+    }
+}
